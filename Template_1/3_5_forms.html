@@ -90,74 +90,73 @@
         <!-- FORM -->
         <form>
             <!-- TEXT FIELD GROUPS -->
-            <div class="form-group">
+            <div>
                 <label for="name">Name</label>
-                <input class="form-control" type="text" id="name" placeholder="Enter name">
+                <input type="text" id="name" placeholder="Enter name">
             </div>
-            <div class="form-group">
+            <div>
                 <label for="email">Email address</label>
-                <input class="form-control form-control-lg" type="email" id="email" placeholder="Enter email">
-                <small class="form-text text-muted">Your email will not ever be shared</small>
+                <input type="email" id="email" placeholder="Enter email">
             </div>
-            <div class="form-group">
+            <div>
                 <label for="company">Company</label>
-                <input class="form-control form-control-sm" type="text" id="company" placeholder="Enter company name">
+                <input type="text" id="company" placeholder="Enter company name">
             </div>
-            <div class="form-group">
+            <div>
                 <label for="password">Password</label>
-                <input class="form-control" type="password" id="password" placeholder="Password" readonly>
+                <input type="password" id="password" placeholder="Password">
             </div>
             <!-- SELECT -->
-            <div class="form-group">
+            <div>
                 <label for="gender">Gender</label>
-                <select class="form-control" id="gender">
+                <select id="gender">
                     <option>Male</option>
                     <option>Female</option>
                 </select>
             </div>
             <!-- TEXTAREA -->
-            <div class="form-group">
+            <div>
                 <label for="message">Message</label>
-                <textarea class="form-control" id="message" rows="3"></textarea>
+                <textarea id="message" rows="3"></textarea>
             </div>
             <!-- FILE INPUT -->
-            <div class="form-group">
+            <div>
                 <label for="file">File input</label>
-                <input type="file" id="file" class="form-control-file">
-                <small class="form-text text-muted" id="fileHelp">Max 3mb size</small>
+                <input type="file" id="file">
+                <small id="fileHelp">Max 3mb size</small>
             </div>
             <!-- CUSTOM FILE INPUT -->
-            <div class="custom-file">
-                <input type="file" id="myfile" class="custom-file-input">
-                <label class="custom-file-label" for="myfile">Choose file</label>
+            <div>
+                <input type="file" id="myfile">
+                <label for="myfile">Choose file</label>
             </div>
             <br>
             <br>
             <!-- RANGE -->
-            <div class="form-group">
+            <div>
                 <label for="membership">Membership Level</label>
-                <input class="custom-range" min="1" max="5" step="1" value="1" type="range">
+                <input type="range">
             </div>
 
             <br>
 
-            <button class="btn btn-primary btn-block" type="submit">Submit</button>
+            <button type="submit">Submit</button>
         </form>
 
         <br>
         <br>
 
         <!-- INLINE FORM -->
-        <form class="form-inline">
-            <input class="form-control mr-2" type="text" id="username" placeholder="Enter username">
-            <input class="form-control mr-2" type="text" id="password" placeholder="Password">
-            <div class="form-check">
-                <label class="form-check-label mr-2">
-                    <input type="checkbox" class="form-check-input"> Remember me
+        <form>
+            <input type="text" id="username" placeholder="Enter username">
+            <input type="text" id="password" placeholder="Password">
+            <div>
+                <label>
+                    <input type="checkbox"> Remember me
                 </label>
             </div>
 
-            <button class="btn btn-light" type="submit">Submit</button>
+            <button type="submit">Submit</button>
         </form>
 
         <br>
@@ -165,12 +164,12 @@
 
         <!-- FORM ROW -->
         <form>
-            <div class="form-row">
-                <div class="col">
-                    <input type="text" class="form-control" placeholder="First name">
+            <div>
+                <div>
+                    <input type="text" placeholder="First name">
                 </div>
-                <div class="col">
-                    <input type="text" class="form-control" placeholder="Last name">
+                <div>
+                    <input type="text" placeholder="Last name">
                 </div>
             </div>
         </form>
@@ -179,21 +178,21 @@
         <br>
 
         <!-- VALIDATION -->
-        <div class="form-group">
+        <div>
             <label for="username">Username</label>
-            <input class="form-control is-valid" type="text" id="username">
+            <input type="text" id="username">
         </div>
-        <div class="form-group">
+        <div>
             <label for="password">Password</label>
-            <input class="form-control is-invalid" type="text" id="password">
-            <div class="invalid-feedback">
+            <input type="text" id="password">
+            <div>
                 Password not strong enough
             </div>
         </div>
-        <div class="form-group">
+        <div>
             <label for="password2">Confirm Password</label>
-            <input class="form-control is-invalid" type="text" id="password2">
-            <div class="invalid-feedback">
+            <input type="text" id="password2">
+            <div>
                 Password does not match
             </div>
         </div>
