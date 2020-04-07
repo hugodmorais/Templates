@@ -13,7 +13,7 @@
 
 <body>
   <header>
-    <h1 class="display-3 text-center my-4">Modals</h1>
+    <h1 class="display-3 text-center my-4">Tooltips</h1>
     <div class="container">
       <div class="row">
         <div class="col-md-3">
@@ -85,37 +85,34 @@
   </header>
 
   <div class="container">
-    <!--#################START HERE#####################-->
+    <!--###################START HERE######################-->
 
-    <!-- MODAL TRIGGER -->
-    <button>Launch Modal</button>
-
-    <!-- MODAL -->
-    <div>
-      <div>
-        <div>
-          <div>
-            <h5>Modal Title</h5>
-            <button>&times;</button>
-          </div>
-          <div>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus unde veniam harum magnam molestias dignissimos omnis
-            architecto, quod, obcaecati dolorum debitis dolore porro qui, iusto quo accusantium voluptates pariatur illo.
-          </div>
-          <div>
-            <button>Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
+    <!-- TOOLTIPS -->
+    <button class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip On Top</button>
+    <button class="btn btn-success" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip On Right</button>
+    <button class="btn btn-warning" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip On Bottom</button>
+    <button class="btn btn-danger" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip On Left</button>
 
     <br>
     <br>
 
-    <!-- LOGIN MODAL TRIGGER -->
+    <!-- TOOLTIPS WITH HTML -->
+    <button id="hello" class="btn btn-primary" data-toggle="tooltip" data-placement="top" data-html="true" title="<h3>Hello</h3><p>Hello World</p>">Tooltip On With HTML</button>
 
+    <hr>
 
-    <!-- LOGIN MODAL -->
+    <!-- TRIGGER WITH JS -->
+    <button class="btn btn-secondary" onclick="showTooltip()">
+      Show Tooltip
+    </button>
+
+    <button class="btn btn-secondary" onclick="hideTooltip()">
+      Hide Tooltip
+    </button>
+
+    <button class="btn btn-secondary" onclick="toggleTooltip()">
+      Toggle Tooltip
+    </button>
 
   </div>
 
@@ -127,6 +124,39 @@
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
     crossorigin="anonymous"></script>
+  <script>
+    // Init tooltips
+    $('[data-toggle="tooltip"]').tooltip();
+
+    function showTooltip() {
+      $('#hello').tooltip('show');
+    }
+
+    function hideTooltip() {
+      $('#hello').tooltip('hide');
+    }
+
+    function toggleTooltip() {
+      $('#hello').tooltip('toggle');
+    }
+
+    // Tooltip Events
+    $('#hello').on('show.bs.tooltip', function () {
+      console.log('Tooltip Show');
+    });
+
+    $('#hello').on('shown.bs.tooltip', function () {
+      console.log('Tooltip Shown');
+    });
+
+    $('#hello').on('hide.bs.tooltip', function () {
+      console.log('Tooltip Hide');
+    });
+
+    $('#hello').on('hidden.bs.tooltip', function () {
+      console.log('Tooltip Hidden');
+    });
+  </script>
 </body>
 
 </html>

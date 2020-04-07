@@ -13,7 +13,7 @@
 
 <body>
   <header>
-    <h1 class="display-3 text-center my-4">Text Alignment & Display</h1>
+    <h1 class="display-3 text-center my-4">Collapse & Accordion</h1>
     <div class="container">
       <div class="row">
         <div class="col-md-3">
@@ -85,76 +85,75 @@
   </header>
 
   <div class="container">
-    <!--#####################START HERE######################-->
+    <!--#####################START HERE###################-->
 
-    <!-- JUSTIFY -->
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae asperiores dolorem accusamus dolor eligendi, unde adipisci
-      a odio, quas aperiam tempora earum delectus magnam quia veritatis in! Natus quibusdam dolores architecto magni rem!
-      Error repellat esse dolorem dolore neque odit rem non accusamus eligendi ab nesciunt dicta voluptatibus velit, vel
-      obcaecati quisquam optio reiciendis soluta tempora, voluptatum sapiente eos? Explicabo provident sit commodi blanditiis
-      assumenda dolor ex aliquid aut beatae porro necessitatibus eos, neque distinctio non amet nemo et! Ipsum, dolorum quis
-      at perferendis corporis iure aliquid illo, deserunt impedit, quod nam! Molestias atque voluptatem numquam veritatis
-      ex mollitia eveniet.</p>
+    <!-- BUTTON WITH COLLAPSE -->
+    <button class="btn btn-primary d-block mb-4" data-toggle="collapse" data-target="#collapse-btn-1">Read More</button>
 
-    <br>
-    <br>
-
-    <!-- ALIGNMENT -->
-    <p>Text aligned left</p>
-    <p>Text aligned center</p>
-    <p>Text aligned right</p>
-
-    <!-- RESPONSIVE ALIGN -->
-    <p>Right aligned on small or larger</p>
-    <p>Right aligned on medium or larger</p>
-    <p>Right aligned on large or larger</p>
-    <p>Right aligned on xl or larger</p>
-
-    <p>Left aligned text on small or larger</p>
-    <p>Left aligned text on medium or larger</p>
-    <p>Left aligned text on large or wider</p>
-    <p>Left aligned text on extra large or wider</p>
-
-    <p>Center aligned text on small or larger</p>
-    <p>Center aligned text on medium or larger</p>
-    <p>Center aligned text on large or wider</p>
-    <p>Center aligned text on extra large or wider</p>
-
-    <br>
-    <br>
-
-    <!-- VERTICAL ALIGNMENT -->
-    <span>baseline</span>
-    <span>top</span>
-    <span>bottom</span>
-    <span>middle</span>
-    <span>text-top</span>
-    <span>text-bottom</span>
-
-    <br>
-    <br>
-
-    <!-- TURN BLOCK TO INLINE -->
-    <h1>Hello</h1>
-    <h1>Goodbye</h1>
-
-    <br>
-    <br>
-
-    <!-- TURN INLINE TO BLOCK -->
-    <span>Block</span>
-
-    <br>
-    <br>
-
-    <!-- INLINE BLOCK -->
-    <div>
-      <h3>Hello</h3>
-      This is inline
+    <div class="collapse mb-5" id="collapse-btn-1">
+      <div class="card">
+        <div class="card-body">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eius libero quisquam nobis explicabo vel non necessitatibus
+          ipsum doloribus cupiditate voluptate recusandae quo autem error debitis, sed, minima repellendus commodi.
+        </div>
+      </div>
     </div>
-    <div>
-      <h3>Hello</h3>
-      This is inline
+
+    <!-- ACCORDION -->
+    <div id="accordion">
+      <div class="card">
+        <div class="card-header">
+          <h5>
+            <a href="#collapse1" data-parent="#accordion" data-toggle="collapse">
+              Collapse One
+            </a>
+          </h5>
+        </div>
+
+        <div id="collapse1" class="collapse show">
+          <div class="card-body">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis ea iste a doloremque, cumque, debitis eum vel ipsum architecto
+            aut, recusandae totam ullam aperiam. Nesciunt expedita officiis animi quam corporis optio inventore facilis sint
+            et nulla in, repellat debitis dolor at nisi quo, unde temporibus. Quos nisi nostrum officia, illo.
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <h5>
+            <a href="#collapse2" data-parent="#accordion" data-toggle="collapse">
+              Collapse Two
+            </a>
+          </h5>
+        </div>
+
+        <div id="collapse2" class="collapse">
+          <div class="card-body">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis ea iste a doloremque, cumque, debitis eum vel ipsum architecto
+            aut, recusandae totam ullam aperiam. Nesciunt expedita officiis animi quam corporis optio inventore facilis sint
+            et nulla in, repellat debitis dolor at nisi quo, unde temporibus. Quos nisi nostrum officia, illo.
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <h5>
+            <a href="#collapse3" data-parent="#accordion" data-toggle="collapse">
+              Collapse Three
+            </a>
+          </h5>
+        </div>
+
+        <div id="collapse3" class="collapse">
+          <div class="card-body">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis ea iste a doloremque, cumque, debitis eum vel ipsum architecto
+            aut, recusandae totam ullam aperiam. Nesciunt expedita officiis animi quam corporis optio inventore facilis sint
+            et nulla in, repellat debitis dolor at nisi quo, unde temporibus. Quos nisi nostrum officia, illo.
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 

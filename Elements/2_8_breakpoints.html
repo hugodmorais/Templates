@@ -9,11 +9,66 @@
         crossorigin="anonymous">
 
     <title>Bootstrap Sandbox</title>
+    <style>
+        /* Small devices (landscape phones) */
+
+        @media (min-width: 576px) {
+            body {
+                background: red;
+            }
+        }
+
+        /* Medium devices (tablets) */
+
+        @media (min-width: 768px) {
+            body {
+                background: blue
+            }
+        }
+
+        /* Large devices (desktops) */
+
+        @media (min-width: 992px) {
+            body {
+                background: green;
+            }
+        }
+
+        /* Extra large devices (large desktops) */
+
+        @media (min-width: 1200px) {
+            body {
+                background: yellow;
+            }
+        }
+
+        /* The given screen size or smaller */
+
+        /* Extra small devices (portrait phones)*/
+
+        @media (max-width: 575px) {
+            body {
+                background: coral;
+            }
+        }
+
+        /* Small devices (landscape phones)*/
+
+        @media (max-width: 767px) {}
+
+        /* Medium devices (tablets)*/
+
+        @media (max-width: 991px) {}
+
+        /* Large devices (desktops)*/
+
+        @media (max-width: 1199px) {}
+    </style>
 </head>
 
 <body>
     <header>
-        <h1 class="display-3 text-center my-4">Sizing & Borders</h1>
+        <h1 class="display-3 text-center my-4">Breakpoints</h1>
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
@@ -85,62 +140,8 @@
     </header>
 
     <div class="container">
-        <!--##################START HERE####################-->
+        <!--########################START HERE#########################-->
 
-        <!-- WIDTH CLASSES -->
-        <div class="bg-success p-3">Width 25%</div>
-        <div class="bg-success p-3">Width 50%</div>
-        <div class="bg-success p-3">Width 75%</div>
-        <div class="bg-success p-3">Width 100%</div>
-        <div class="bg-success p-3">Width Auto</div>
-
-        <br>
-        <br>
-
-        <!-- HEIGHT CLASSES -->
-        <div>
-            <div class="bg-primary d-inline-block">Height 25%</div>
-            <div class="bg-primary d-inline-block">Height 50%</div>
-            <div class="bg-primary d-inline-block">Height 75%</div>
-            <div class="bg-primary d-inline-block">Height 100%</div>
-            <div class="bg-primary d-inline-block">Height Auto</div>
-        </div>
-
-        <br>
-        <br>
-
-        <!-- BORDERS -->
-        <div class="p-3 mb-2 bg-light">Regular</div>
-        <div class="p-3 mb-2 bg-light">Border Top</div>
-        <div class="p-3 mb-2 bg-light">Border Bottom</div>
-        <div class="p-3 mb-2 bg-light">Border Right</div>
-        <div class="p-3 mb-2 bg-light">Border Left</div>
-
-        <br>
-        <br>
-
-        <!-- BORDER COLORS -->
-        <div class="p-3 mb-2 bg-light">Primary</div>
-        <div class="p-3 mb-2 bg-light">Secondary</div>
-        <div class="p-3 mb-2 bg-light">Success</div>
-        <div class="p-3 mb-2 bg-light">Info</div>
-        <div class="p-3 mb-2 bg-light">Warning</div>
-        <div class="p-3 mb-2 bg-light">Danger</div>
-        <div class="p-3 mb-2 bg-light">Light</div>
-        <div class="p-3 mb-2 bg-light">Dark</div>
-        <div class="p-3 mb-2 bg-light">White</div>
-
-        <br>
-        <br>
-
-        <!-- BORDER RADIUS -->
-        <div class="p-3 mb-2 bg-light">Rounded</div>
-        <div class="p-3 mb-2 bg-light">Rounded Top</div>
-        <div class="p-3 mb-2 bg-light">Rounded Bottom</div>
-        <div class="p-3 mb-2 bg-light">Rounded Right</div>
-        <div class="p-3 mb-2 bg-light">Rounded Left</div>
-        <div class="p-3 mb-2 bg-light">Rounded Circle</div>
-        <div class="p-3 mb-2 bg-light">Dark</div>
 
     </div>
     <!-- ./container -->
